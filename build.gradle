@@ -1,6 +1,7 @@
 plugins {
     id 'fabric-loom' version '0.8-SNAPSHOT'
     id 'maven-publish'
+    id "com.modrinth.minotaur" version "2.+"
 }
 
 sourceCompatibility = JavaVersion.VERSION_16
@@ -16,6 +17,7 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:0.11.3"
 
     //Fabric api
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.34.9+1.17"
 }
 
 processResources {
@@ -53,4 +55,22 @@ publishing {
         // uncomment to publish to the local maven
         // mavenLocal()
     }
+}
+
+modrinth {
+    token = System.getenv("MODRINTH_TOKEN")
+    projectId = "xJqFTF5a"
+    versionNumber = project.mod_version
+    versionType = "release" // This is the default -- can also be `beta` or `alpha`
+    uploadFile = remapJar // With Loom, this MUST be set to `remapJar` instead of `jar`!
+    gameVersions = ["1.18", "1.18.1", "1.18.2"] // Must be an array, even with only one version
+    loaders = ["fabric"] // Must also be an array - no need to specify this if you're using Loom or ForgeGradle
+    dependencies { // A special DSL for creating dependencies
+      // scope.type
+      // The scope can be `required`, `optional`, or `incompatible`
+      // The type can either be `project` or `version`
+      required.project "P7dR8mSH" // Creates a new required dependency on Fabric API
+    }
+    syncBodyFrom = rootProject.file("README.md").text
+
 }

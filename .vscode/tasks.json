@@ -51,12 +51,30 @@
 			"rootProject": "minecraft-fabric-UnsuspiciousStew",
 			"projectFolder": "/workspaces/minecraft-fabric-UnsuspiciousStew",
 			"workspaceFolder": "/workspaces/minecraft-fabric-UnsuspiciousStew",
-			"args": "--warning-mode all --info",
+			"args": "--warning-mode all",
 			"javaDebug": false,
 			"problemMatcher": [
 				"$gradle"
 			],
 			"label": "mc: build"
+		},
+		{
+			"type": "gradle",
+			"id": "/workspaces/minecraft-fabric-UnsuspiciousStewmodrinthminecraft-fabric-UnsuspiciousStew",
+			"script": "modrinth",
+			"description": "Upload project to Modrinth",
+			"group": "publishing",
+			"project": "minecraft-fabric-UnsuspiciousStew",
+			"buildFile": "/workspaces/minecraft-fabric-UnsuspiciousStew/build.gradle",
+			"rootProject": "minecraft-fabric-UnsuspiciousStew",
+			"projectFolder": "/workspaces/minecraft-fabric-UnsuspiciousStew",
+			"workspaceFolder": "/workspaces/minecraft-fabric-UnsuspiciousStew",
+			"args": "",
+			"javaDebug": false,
+			"problemMatcher": [
+				"$gradle"
+			],
+			"label": "mc: upload to modrinth"
 		}
 	]
 }
