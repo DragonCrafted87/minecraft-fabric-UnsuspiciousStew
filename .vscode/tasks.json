@@ -42,13 +42,16 @@
 			"id": "/workspaces/minecraft-fabric-UnsuspiciousStewbuildminecraft-fabric-UnsuspiciousStew",
 			"script": "build",
 			"description": "Assembles and tests this project.",
-			"group": "build",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
 			"project": "minecraft-fabric-UnsuspiciousStew",
 			"buildFile": "/workspaces/minecraft-fabric-UnsuspiciousStew/build.gradle",
 			"rootProject": "minecraft-fabric-UnsuspiciousStew",
 			"projectFolder": "/workspaces/minecraft-fabric-UnsuspiciousStew",
 			"workspaceFolder": "/workspaces/minecraft-fabric-UnsuspiciousStew",
-			"args": "",
+			"args": "--warning-mode all",
 			"javaDebug": false,
 			"problemMatcher": [
 				"$gradle"

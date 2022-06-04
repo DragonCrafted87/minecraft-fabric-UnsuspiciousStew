@@ -6,8 +6,7 @@ plugins {
 sourceCompatibility = JavaVersion.VERSION_16
 targetCompatibility = JavaVersion.VERSION_16
 
-archivesBaseName = "Fabric-${project.minecraft_version}-${project.name}"
-version = project.mod_version
+archivesBaseName = "${project.archives_base_name}-${project.mod_version}-mc-${project.minecraft_version}"
 group = project.maven_group
 
 dependencies {
