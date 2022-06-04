@@ -51,7 +51,7 @@
 			"rootProject": "minecraft-fabric-UnsuspiciousStew",
 			"projectFolder": "/workspaces/minecraft-fabric-UnsuspiciousStew",
 			"workspaceFolder": "/workspaces/minecraft-fabric-UnsuspiciousStew",
-			"args": "--warning-mode all",
+			"args": "--warning-mode all --info",
 			"javaDebug": false,
 			"problemMatcher": [
 				"$gradle"

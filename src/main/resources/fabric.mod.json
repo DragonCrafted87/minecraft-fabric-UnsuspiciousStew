@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "unsuspicious-stew",
-  "version": "${version}",
+  "version": "${mod_version}",
   "name": "Unsuspicious Stew",
   "description": "Displays the effects of a suspicious stew",
   "authors": [
