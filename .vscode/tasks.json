@@ -1,0 +1,59 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "gradle",
+			"id": "/workspaces/minecraft-fabric-UnsuspiciousStewvscodeminecraft-fabric-UnsuspiciousStew",
+			"script": "vscode",
+			"description": "Generates VSCode launch configurations.",
+			"group": "ide",
+			"project": "minecraft-fabric-UnsuspiciousStew",
+			"buildFile": "/workspaces/minecraft-fabric-UnsuspiciousStew/build.gradle",
+			"rootProject": "minecraft-fabric-UnsuspiciousStew",
+			"projectFolder": "/workspaces/minecraft-fabric-UnsuspiciousStew",
+			"workspaceFolder": "/workspaces/minecraft-fabric-UnsuspiciousStew",
+			"args": "",
+			"javaDebug": false,
+			"problemMatcher": [
+				"$gradle"
+			],
+			"label": "mc: vscode"
+		},
+		{
+			"type": "gradle",
+			"id": "/workspaces/minecraft-fabric-UnsuspiciousStewgenSourcesminecraft-fabric-UnsuspiciousStew",
+			"script": "genSources",
+			"description": "",
+			"group": "fabric",
+			"project": "minecraft-fabric-UnsuspiciousStew",
+			"buildFile": "/workspaces/minecraft-fabric-UnsuspiciousStew/build.gradle",
+			"rootProject": "minecraft-fabric-UnsuspiciousStew",
+			"projectFolder": "/workspaces/minecraft-fabric-UnsuspiciousStew",
+			"workspaceFolder": "/workspaces/minecraft-fabric-UnsuspiciousStew",
+			"args": "",
+			"javaDebug": false,
+			"problemMatcher": [
+				"$gradle"
+			],
+			"label": "mc: genSources"
+		},
+		{
+			"type": "gradle",
+			"id": "/workspaces/minecraft-fabric-UnsuspiciousStewbuildminecraft-fabric-UnsuspiciousStew",
+			"script": "build",
+			"description": "Assembles and tests this project.",
+			"group": "build",
+			"project": "minecraft-fabric-UnsuspiciousStew",
+			"buildFile": "/workspaces/minecraft-fabric-UnsuspiciousStew/build.gradle",
+			"rootProject": "minecraft-fabric-UnsuspiciousStew",
+			"projectFolder": "/workspaces/minecraft-fabric-UnsuspiciousStew",
+			"workspaceFolder": "/workspaces/minecraft-fabric-UnsuspiciousStew",
+			"args": "",
+			"javaDebug": false,
+			"problemMatcher": [
+				"$gradle"
+			],
+			"label": "mc: build"
+		}
+	]
+}
