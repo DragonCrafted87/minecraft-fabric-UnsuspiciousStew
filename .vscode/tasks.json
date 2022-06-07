@@ -8,10 +8,10 @@
 			"description": "Generates VSCode launch configurations.",
 			"group": "ide",
 			"project": "minecraft-fabric-UnsuspiciousStew",
-			"buildFile": "/workspaces/minecraft-fabric-UnsuspiciousStew/build.gradle",
-			"rootProject": "minecraft-fabric-UnsuspiciousStew",
-			"projectFolder": "/workspaces/minecraft-fabric-UnsuspiciousStew",
-			"workspaceFolder": "/workspaces/minecraft-fabric-UnsuspiciousStew",
+			"buildFile": "/workspaces/fabric-UnsuspiciousStew/build.gradle",
+			"rootProject": "fabric-UnsuspiciousStew",
+			"projectFolder": "/workspaces/fabric-UnsuspiciousStew",
+			"workspaceFolder": "/workspaces/fabric-UnsuspiciousStew",
 			"args": "",
 			"javaDebug": false,
 			"problemMatcher": [
@@ -27,9 +27,9 @@
 			"group": "fabric",
 			"project": "minecraft-fabric-UnsuspiciousStew",
 			"buildFile": "/workspaces/minecraft-fabric-UnsuspiciousStew/build.gradle",
-			"rootProject": "minecraft-fabric-UnsuspiciousStew",
-			"projectFolder": "/workspaces/minecraft-fabric-UnsuspiciousStew",
-			"workspaceFolder": "/workspaces/minecraft-fabric-UnsuspiciousStew",
+			"rootProject": "fabric-UnsuspiciousStew",
+			"projectFolder": "/workspaces/fabric-UnsuspiciousStew",
+			"workspaceFolder": "/workspaces/fabric-UnsuspiciousStew",
 			"args": "",
 			"javaDebug": false,
 			"problemMatcher": [
@@ -48,9 +48,9 @@
 			},
 			"project": "minecraft-fabric-UnsuspiciousStew",
 			"buildFile": "/workspaces/minecraft-fabric-UnsuspiciousStew/build.gradle",
-			"rootProject": "minecraft-fabric-UnsuspiciousStew",
-			"projectFolder": "/workspaces/minecraft-fabric-UnsuspiciousStew",
-			"workspaceFolder": "/workspaces/minecraft-fabric-UnsuspiciousStew",
+			"rootProject": "fabric-UnsuspiciousStew",
+			"projectFolder": "/workspaces/fabric-UnsuspiciousStew",
+			"workspaceFolder": "/workspaces/fabric-UnsuspiciousStew",
 			"args": "--warning-mode all",
 			"javaDebug": false,
 			"problemMatcher": [
@@ -66,15 +66,33 @@
 			"group": "publishing",
 			"project": "minecraft-fabric-UnsuspiciousStew",
 			"buildFile": "/workspaces/minecraft-fabric-UnsuspiciousStew/build.gradle",
-			"rootProject": "minecraft-fabric-UnsuspiciousStew",
-			"projectFolder": "/workspaces/minecraft-fabric-UnsuspiciousStew",
-			"workspaceFolder": "/workspaces/minecraft-fabric-UnsuspiciousStew",
+			"rootProject": "fabric-UnsuspiciousStew",
+			"projectFolder": "/workspaces/fabric-UnsuspiciousStew",
+			"workspaceFolder": "/workspaces/fabric-UnsuspiciousStew",
 			"args": "",
 			"javaDebug": false,
 			"problemMatcher": [
 				"$gradle"
 			],
 			"label": "mc: upload to modrinth"
+		},
+		{
+			"type": "gradle",
+			"id": "/workspaces/minecraft-fabric-UnsuspiciousStewmodrinthminecraft-fabric-UnsuspiciousStew",
+			"script": "migrateMappings",
+			"description": "Upload project to Modrinth",
+			"group": "publishing",
+			"project": "minecraft-fabric-UnsuspiciousStew",
+			"buildFile": "/workspaces/minecraft-fabric-UnsuspiciousStew/build.gradle",
+			"rootProject": "fabric-UnsuspiciousStew",
+			"projectFolder": "/workspaces/fabric-UnsuspiciousStew",
+			"workspaceFolder": "/workspaces/fabric-UnsuspiciousStew",
+			"args": "--mappings '1.19+build.1'",
+			"javaDebug": false,
+			"problemMatcher": [
+				"$gradle"
+			],
+			"label": "mc: remap"
 		}
 	]
 }

@@ -20,6 +20,4 @@ public class MixinItemStack {
     public void onInjectTooltip(PlayerEntity player, TooltipContext context, CallbackInfoReturnable<List<Text>> ci) {
         StewInfo.onInjectTooltip(this, ci.getReturnValue());
     }
-
-
 }

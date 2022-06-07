@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '0.8-SNAPSHOT'
+    id 'fabric-loom' version '0.12-SNAPSHOT'
     id 'maven-publish'
     id "com.modrinth.minotaur" version "2.+"
 }
@@ -12,12 +12,12 @@ version = "${project.mod_version}+mc-${project.minecraft_version}+fabric"
 group = project.maven_group
 
 dependencies {
-    minecraft "com.mojang:minecraft:1.17"
-    mappings "net.fabricmc:yarn:1.17+build.1:v2"
-    modImplementation "net.fabricmc:fabric-loader:0.11.3"
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-    //Fabric api
-    modImplementation "net.fabricmc.fabric-api:fabric-api:0.34.9+1.17"
+	// Fabric API. This is technically optional, but you probably want it anyway.
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 }
 
 processResources {
@@ -63,7 +63,7 @@ modrinth {
     versionNumber = project.mod_version
     versionType = "release" // This is the default -- can also be `beta` or `alpha`
     uploadFile = remapJar // With Loom, this MUST be set to `remapJar` instead of `jar`!
-    gameVersions = ["1.18", "1.18.1", "1.18.2"] // Must be an array, even with only one version
+    gameVersions = ["1.19"] // Must be an array, even with only one version
     loaders = ["fabric"] // Must also be an array - no need to specify this if you're using Loom or ForgeGradle
     dependencies { // A special DSL for creating dependencies
       // scope.type
